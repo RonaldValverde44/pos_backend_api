@@ -6,3 +6,4 @@ cloudinary
 djangorestframework-simplejwt
 python-decouple
 gunicorn
+whitenoise
