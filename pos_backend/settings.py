@@ -149,7 +149,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-cloudinary.config( 
+cloudinary.config(
   cloud_name = 'dfkwq5tj7', 
   api_key = '886427967177437', 
   api_secret = 'KMKIivcBnzatzgFldT5pqNm3IOE' 
