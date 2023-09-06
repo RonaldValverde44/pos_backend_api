@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'drf_yasg',
 ]
 
 REST_FRAMEWORK = {
@@ -88,14 +89,15 @@ WSGI_APPLICATION = 'pos_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('MYSQL_ADDON_DB',default='db_pos_backend'),
-        'USER': config('MYSQL_ADDON_USER',default='root'),
-        'PASSWORD': config('MYSQL_ADDON_PASSWORD',default=''),
-        'HOST': config('MYSQL_ADDON_HOST',default='127.0.0.1'),
-        'PORT': config('MYSQL_ADDON_PORT',default='3306'),
+        'NAME': config('MYSQL_ADDON_DB', default='db_pos_backend'),
+        'USER': config('MYSQL_ADDON_USER', default='root'),
+        'PASSWORD': config('MYSQL_ADDON_PASSWORD', default=''),
+        'HOST': config('MYSQL_ADDON_HOST', default='127.0.0.1'),
+        'PORT': config('MYSQL_ADDON_PORT', default='3306'),
     }
 }
 
@@ -138,7 +140,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -146,7 +148,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
-          
+
 cloudinary.config( 
   cloud_name = 'dfkwq5tj7', 
   api_key = '886427967177437', 
